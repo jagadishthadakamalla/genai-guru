@@ -3,14 +3,13 @@ import os
 from dotenv import load_dotenv  
 from openai import AzureOpenAI
 
-load_dotenv()
 client = AzureOpenAI(
-    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
-    api_key=os.getenv("AZURE_OPENAI_KEY"),
-    api_version="2025-01-01-preview",
+    azure_endpoint=st.secrets["AZURE_OPENAI_ENDPOINT"],
+    api_key=st.secrets["AZURE_OPENAI_KEY"],
+    api_version=st.secrets["AZURE_API_VERSION"],
 )
 
-DEPLOYMENT_NAME = os.getenv("AZURE_DEPLOYMENT_NAME")
+DEPLOYMENT_NAME = st.secrets["AZURE_DEPLOYMENT_NAME"]
 
 st.title("📈 Personal Productivity Tracker")
 st.markdown("Track your daily goal and get a motivational boost.")
