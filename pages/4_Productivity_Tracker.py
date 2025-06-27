@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv  
 from openai import AzureOpenAI
 
-client = AzureOpenAI(
+client = openai.AzureOpenAI(
     azure_endpoint=st.secrets["AZURE_OPENAI_ENDPOINT"],
     api_key=st.secrets["AZURE_OPENAI_KEY"],
     api_version=st.secrets["AZURE_API_VERSION"],
