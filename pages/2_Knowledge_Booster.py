@@ -10,8 +10,6 @@ client = openai.AzureOpenAI(
 
 DEPLOYMENT_NAME = st.secrets["AZURE_DEPLOYMENT_NAME"]
 
-DEPLOYMENT_NAME = os.getenv("AZURE_DEPLOYMENT_NAME")
-
 st.title("📚 Knowledge Booster")
 st.markdown("Type a concept or tech topic you're curious about.")
 
