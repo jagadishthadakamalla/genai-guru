@@ -5,7 +5,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("💡 GenAI Guru")
+st.title("💡 GenAI Guru - By Jagadish Thadakamalla")
 
 st.markdown(
     """
