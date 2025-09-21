@@ -20,3 +20,5 @@ st.markdown(
 )
 
 st.info("Try typing a question like: *Should I become a manager or stay technical?*")
+
+st.info("Idea and Development by *Jagadish Thadakamalla*")
