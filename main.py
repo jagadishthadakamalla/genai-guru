@@ -20,6 +20,3 @@ st.markdown(
 )
 
 st.info("Try typing a question like: *Should I become a manager or stay technical?*")
-
-st.info("The application thought and development done 
-by *Jagadish Thadakamalla*")
